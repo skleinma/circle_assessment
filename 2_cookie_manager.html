@@ -1,0 +1,26 @@
+<html>
+<header><title>Circle Assessement 2</title></header>
+<head>
+    <script type="text/javascript" src="../circle_assessment/js/2_cookie_manager.js"></script>
+
+    <script type="text/javascript">
+        function showCookie() {
+            alert('The value of the cCounter cookie is ' + Cookies.getCookie('cCounter'));
+        }
+    </script>
+</head>
+<body onload = "Cookies.initOrIncrement('cCounter')">
+    <p><b>Circle Assessement 2:</b> Hit F12 to see cookie cCounter value increment in console log every page load</p>
+    <p></p>
+    <button onclick="showCookie()">Show Cookie Value</button>
+    <p></p>
+    <p>Click this button refresh this page and automatically add 1 to Cookie Counter value</p>
+    <button onClick="window.location.reload();">Refresh Page to +1</button>
+    <p></p>
+    <p>Click this button to reset the Cookie Counter value back to 0</p>
+    <button onclick="Cookies.setCookie('cCounter',0,7)">Reset Cookie to 0</button>
+    <p></p>
+    <p>Click this button to Delete the Cookie</p>
+    <button onclick="Cookies.deleteCookie('cCounter',0,7)">Delete Cookie</button>
+</body>
+</html>

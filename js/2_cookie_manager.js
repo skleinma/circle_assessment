@@ -45,7 +45,5 @@ var Cookies = {
 	}
 };
 
-// window.onload = Cookies.initOrIncrement('cCounter');
-
 // Print cookie to console log
 console.log(document.cookie);
