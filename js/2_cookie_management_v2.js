@@ -40,7 +40,7 @@ var Cookies = {
 			cCounterInt++;
 			this.setCookie('cCounter',cCounterInt,7);
 			console.log(document.cookie);
-        	alert('Cookie counter incremented ' + this.getCookie(name));
+        	alert('Cookie counter incremented, now = ' + this.getCookie(name));
 		}
 	}
 };
