@@ -4,15 +4,15 @@
     <script type="text/javascript" src="../circle_assessment/js/2_cookie_management_v2.js"></script>
 
     <script type="text/javascript">
-        function showCookie(name) {
-            alert('The value of the cookie is ' + Cookies.getCookie[name]);
+        function showCookie() {
+            alert('The value of the cookie is ' + Cookies.getCookie('cCounter'));
         }
     </script>
 </head>
 <body onload = "Cookies.initOrIncrement('cCounter')">
     <p>Circle Assessement 2 - Hit F12 to see cookie cCounter value increment in console log every page load</p>
     <p></p>
-    <a href="javascript:showCookie('cCounter')" class="page">Show Cookie Value</a><br />
+    <a href="javascript:showCookie()" class="page">Show Cookie Value</a><br />
     <p></p>
     <p>Click this button refresh this page and automatically add 1 to Cookie Counter value</p>
     <button onClick="window.location.reload();">Refresh Page to +1</button>
