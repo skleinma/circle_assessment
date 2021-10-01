@@ -7,7 +7,7 @@ var Cookies = {
 			var expires = "; expires="+date.toGMTString();
 		}
 		else var expires = "";
-			document.cookie = name+"="+value+expires+"; path=/; SameSite=none; secure";
+			document.cookie = name+"="+value+expires+"; path=/";
 			this[name] = value;
 			console.log(document.cookie);
 			//alert('Cookie created');
