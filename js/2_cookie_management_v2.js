@@ -10,7 +10,7 @@ var Cookies = {
 			document.cookie = name+"="+value+expires+"; path=/";
 			this[name] = value;
 			console.log(document.cookie);
-			alert('Cookie created');
+			//alert('Cookie created');
 	},
 	getCookie: function(name) {
 		var nameEQ = name + "=";
