@@ -1,0 +1,54 @@
+<html>
+<header><title>Circle Assessement 2 - Increment Cookie Counter</title></header>
+<head>
+    <script type="text/javascript" src="../circle_assessment/js/2_cookie_management.js"></script>
+
+    <script type="text/javascript">
+        <!--
+        function saveCookie(name,value,days) {
+            //var x = document.forms['cookieform'].cookievalue.value;
+            //if (!x)
+            //    alert('Please fill in a value in the input box.');
+            //else {
+                setCookie(name,value,7);
+                alert('Cookie created' + readCookie(name));
+            //}
+        }
+        
+        function readCookie(name) {
+            alert('The value of the cookie is ' + readCookie(name));
+        }
+        
+        function removeCookie(name) {
+            eraseCookie(name);
+            alert('Cookie erased');
+        }
+        
+        function init() {
+            for (var i=1;i<3;i++) {
+                var x = readCookie['cCounter' + i];
+                if (x) alert('Cookie cCounter' + i + '\nthat you set on a previous visit, is still active.\nIts value is ' + x);
+            }
+        }
+
+        function init2() {
+		var currentCookie = document.cookie.split('; ');
+		for (var i=0;i<allCookies.length;i++) {
+			var cookiePair = allCookies[i].split('=');
+			this[cookiePair[0]] = cookiePair[1];
+		}
+	}
+        
+        window.onload = init();
+        //-->
+        </script>
+</head>
+<body>
+    <p>Circle Assessement 2 - Hit F12 to see cookie cCounter value increment in console log every page load</p>
+    <p></p>
+    <p>Click the buttons below to Read and Reset the Cookie Counter</p>
+    <p></p>
+    <button onclick="readIt('cCounter')">Read Cookie</button>
+    <button onclick="saveIt('cCounter',0,7)">Reset Cookie</button>
+</body>
+</html>
